@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agrinho 2026 - Uso Consciente da Água na Agricultura</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Agro Forte, Futuro Sustentável</h1>
+    <p>Uso Consciente da Água na Agricultura</p>
+</header>
+
+<nav>
+    <a href="#introducao">Introdução</a>
+    <a href="#problema">Problema</a>
+    <a href="#solucao">Solução</a>
+    <a href="#quiz">Quiz</a>
+</nav>
+
+<section id="introducao">
+    <h2>Introdução</h2>
+    <p>
+        A água é um dos recursos naturais mais importantes para a produção de
+        alimentos. A agricultura depende diretamente dela para garantir boas
+        colheitas e abastecer a população.
+    </p>
+</section>
+
+<section id="problema">
+    <h2>O Problema</h2>
+    <p>
+        O desperdício de água na irrigação pode causar impactos ambientais,
+        reduzir a disponibilidade hídrica e prejudicar futuras gerações.
+        Com o aumento da demanda por alimentos, torna-se essencial utilizar
+        esse recurso de forma eficiente.
+    </p>
+</section>
+
+<section id="solucao">
+    <h2>Soluções Sustentáveis</h2>
+
+    <div class="card">
+        <h3>Irrigação Inteligente</h3>
+        <p>
+            Sistemas modernos permitem aplicar apenas a quantidade necessária
+            de água nas plantações.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Captação da Água da Chuva</h3>
+        <p>
+            Reservatórios podem armazenar água para períodos de seca.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Monitoramento do Solo</h3>
+        <p>
+            Sensores ajudam a identificar quando a irrigação realmente é
+            necessária.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>Relação com o Tema Agrinho 2026</h2>
+
+    <p>
+        O uso consciente da água demonstra que é possível manter uma produção
+        agrícola forte e eficiente sem comprometer os recursos naturais,
+        contribuindo para um futuro sustentável.
+    </p>
+</section>
+
+<section id="quiz">
+    <h2>Quiz Sustentável</h2>
+
+    <p>Qual prática ajuda a economizar água na agricultura?</p>
+
+    <button onclick="verificarResposta('a')">
+        Irrigar sem controle
+    </button>
+
+    <button onclick="verificarResposta('b')">
+        Irrigação inteligente
+    </button>
+
+    <button onclick="verificarResposta('a')">
+        Desperdiçar água
+    </button>
+
+    <p id="resultado"></p>
+</section>
+
+<section>
+    <h2>Conclusão</h2>
+
+    <p>
+        A sustentabilidade no campo depende do equilíbrio entre produtividade
+        e preservação ambiental. Utilizar a água de forma consciente garante
+        alimentos para a população e proteção para o meio ambiente.
+    </p>
+</section>
+
+<section>
+    <h2>Referências</h2>
+
+    <ul>
+        <li>EMBRAPA - Agricultura Sustentável</li>
+        <li>ANA - Agência Nacional de Águas</li>
+        <li>FAO - Organização das Nações Unidas para Agricultura e Alimentação</li>
+    </ul>
+</section>
+
+<footer>
+    <p>Agrinho 2026 - Projeto Educacional</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f5f5dc;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:#2e8b57;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+nav{
+    background:#3c6e47;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+section{
+    padding:30px;
+    max-width:1000px;
+    margin:auto;
+}
+
+h2{
+    color:#2e8b57;
+    margin-bottom:15px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin:15px 0;
+    border-left:6px solid #2e8b57;
+    border-radius:8px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+button{
+    padding:12px 20px;
+    margin:10px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    background:#2e8b57;
+    color:white;
+}
+
+button:hover{
+    background:#246b45;
+}
+
+#resultado{
+    margin-top:20px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+footer{
+    background:#2e8b57;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+@media(max-width:768px){
+
+    nav a{
+        display:block;
+        margin:10px 0   
+    }
+
+    section{
+        padding:20px;
+    }
+}
+function verificarResposta(opcao){
+
+    const resultado =
+    document.getElementById("resultado");
+
+    if(opcao === "b"){
+        resultado.innerHTML =
+        "✅ Correto! A irrigação inteligente ajuda a economizar água.";
+        resultado.style.color = "green";
+    }
+    else{
+        resultado.innerHTML =
+        "❌ Resposta incorreta. Tente novamente.";
+        resultado.style.color = "red";
+    }
+}
+# Agrinho 2026
+
+## Tema
+
+Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente.
+
+## Assunto Escolhido
+
+Uso consciente da água na agricultura.
+
+## Sobre o Projeto
+
+Este projeto foi desenvolvido para o Concurso Agrinho 2026 na categoria Programação Web.
+
+O site apresenta a importância da utilização consciente da água na agricultura, mostrando soluções sustentáveis que contribuem para a preservação dos recursos naturais e para a produção eficiente de alimentos.
+
+## Objetivo
+
+Conscientizar sobre a importância da economia de água no campo e demonstrar como tecnologias e boas práticas agrícolas podem contribuir para um futuro sustentável.
+
+## Tecnologias Utilizadas
+
+* HTML
+* CSS
+* JavaScript
+* Inteligência Artificial como apoio ao desenvolvimento
+
+## Funcionalidades
+
+* Página informativa.
+* Conteúdo educativo.
+* Quiz interativo.
+* Layout responsivo.
+
+## Como Acessar
+
+https://SEU-USUARIO.github.io/agrinho2026/
+
+## Autor
+
+Nome do aluno: SEU NOME
+
+Escola: SUA ESCOLA
+
+Professor orientador: NOME DO PROFESSOR
+
+## Observação
+
+Projeto desenvolvido para fins educacionais no Concurso Agrinho 2026.
+agrinho2026
+agrinho
+programacao
+html
+css
+javascript
+sustentabilidade
+agricultura
+agricultura-sustentavel
+meio-ambiente
+educacao
+tecnologia
+campo
+futuro-sustentavel
